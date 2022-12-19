@@ -20,7 +20,7 @@
 
 <script>
 import { ref, reactive, watch } from 'vue';
-import UserService from "./scripts/UserService";
+import UserService from "./service/UserService";
 import TopBarVue from './components/container/TopBar.vue';
 import MainAsideVue from './components/container/MainAside.vue';
 
