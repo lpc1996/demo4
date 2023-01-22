@@ -2,14 +2,14 @@
 	
 		<div class="logo-container">
 			<el-link class="logo-link" :href="logoInfo.href" :underline="false">
-				<el-image class="logo-image" :src="logoInfo.image" />
+				<el-image class="logo-image" :src="logoInfo.image" :alt="logoInfo.title"/>
 				<span class="logo-title">{{ logoInfo.title }}</span>
 			</el-link>
 		</div>
 		<div class="user-container">
 			<el-dropdown>
 				<div class="dropdown-title">
-					<el-avatar class="avator" :size="50" :src="userInfo.avator"></el-avatar>
+					<el-avatar class="avator" :size="50" :src="userInfo.avator" :alt="userInfo.nickName"></el-avatar>
 					<span class="user-name">{{ userInfo.nickName }}</span>
 					<font-awesome-icon class="dropdown-icon" icon="fa-solid fa-chevron-down" />
 				</div>

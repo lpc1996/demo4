@@ -11,18 +11,21 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 import './style.css'
 import App from './App.vue'
+import router from './router'
 
-let app = createApp(App)
+let app = createApp(App);
 
 app.use(ElementPlus, {
     locale: zhCn
-})
+});
 
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
-    app.component(key, component)
+    app.component(key, component);
 }
 
-library.add(fas)
+library.add(fas);
 app.component('font-awesome-icon', FontAwesomeIcon);
 
-app.mount('#app')
+app.use(router);
+
+app.mount('#app');

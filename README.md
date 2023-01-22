@@ -10,8 +10,12 @@ src
  -assets
  -components
   -container
+ -view
  -plugins
  -service
  ```
 
  其中components存放自定义的组件
+ plugins存放第三方工具脚本
+ service存放数据初步处理的脚本
+ view存放页面文件
