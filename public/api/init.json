@@ -10,54 +10,22 @@
 			"href": "#"
 		},
 		"userInfo": {
+			"id":"1",
 			"userName": "07161075",
 			"nickName": "旁观者",
 			"avator": "/images/头像1.jpeg"
 		},
-		"menuInfo": [
-			{
-				"id": 1,
-				"name": "系统设置",
-				"icon": "fa-solid fa-gear",
-				"index": 1,
-				"href": "",
-				"children": [
-					{
-						"id": 2,
-						"name": "角色管理",
-						"icon": "fa-solid fa-user-secret",
-						"index": 1,
-						"href": ""
-					},
-					{
-						"id": 5,
-						"name": "用户管理",
-						"icon": "fa-solid fa-user",
-						"index": 2,
-						"href": ""
-					},
-					{
-						"id": 6,
-						"name": "字典管理",
-						"icon": "fa-solid fa-book",
-						"index": 3,
-						"href": ""
-					},
-					{
-						"id": 7,
-						"name": "菜单管理",
-						"icon": "fa-solid fa-bars",
-						"index": 4,
-						"href": ""
-					}
-				]
-			},
-			{
-				"id": 8,
-				"name": "测试",
-				"icon": "fa-solid fa-bars",
-				"href": "",
-				"index": 2
+		"pageInfo":{
+			"pageMode":"RouterView" 
+		},
+		"menuInfo": [{
+			"id":"1",
+			"name":"Home",
+			"title":"首页",
+			"href":"/home",
+			"icon":"fa-solid fa-house",
+			"index":1,
+			"closable":"false"
 			}
 		]
 	}
